@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<th:block th:fragment="contact-section">
+
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Feel free to reach out for collaborations, questions, or just to say hi!</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's build something together</h3>
+                    <p class="contact-text">
+                        I’m open to discussing projects, ideas, or collaboration opportunities.
+                    </p>
+
+                    <div class="contact-links">
+
+                        <a href="#" class="contact-link" id="email-link">
+                            <div class="contact-link-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-link-text">
+                                <span class="contact-link-label">E-mail</span>
+                                <span class="contact-link-value">oleksandra.s.mala@gmail.com</span>
+                            </div>
+                        </a>
+
+
+                        <a href="https://www.linkedin.com/in/oleksandra-mala" target="_blank" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-link-text">
+                                <span class="contact-link-label">LinkedIn</span>
+                                <span class="contact-link-value">linkedin.com/in/oleksandra-mala</span>
+                            </div>
+                        </a>
+
+
+
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <input type="hidden" name="access_key" value="3f1978c7-a086-4af4-a34f-73fa417b4d9d">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="youremail@example.com" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" name="message" id="message" placeholder="Write your message here…" required ></textarea>
+                        </div>
+
+                        <button class="btn btn-primary">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</th:block>
+</html>

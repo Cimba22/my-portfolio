@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<th:block th:fragment="projects-section">
+
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">
+                    Some of my projects
+                </p>
+            </div>
+
+            <div class="projects-container">
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/img_2.png" alt="Lazurite">
+                        <div class="project-overlay"></div>
+                        <div class="project-tags">
+                            <span class="project-tag">Spring Boot</span>
+                            <span class="project-tag">Spring Security</span>
+                            <span class="project-tag">Data JPA</span>
+                            <span class="project-tag">PostgresQL</span>
+                            <span class="project-tag">Angular</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Lazurite</h3>
+                        <p class="project-description">
+                            Web application designed for keeping track of desired gifts, essentially a wish-list manager.
+                            It provides users with the capability to create lists of desired items and invite acquaintances to view what each person desires.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/Cimba22/Lazurite.git" target="_blank" class="project-link"><i class="fab fa-github"></i>View Code</a>
+                            <a href="https://github.com/Cimba22/Lazurite.git" target="_blank" class="project-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/img_1.png" alt="LightsOut">
+                        <div class="project-overlay"></div>
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">JavaFX</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">LightsOut</h3>
+                        <p class="project-description">
+                            The Lights Out game consists of a grid of lights, with each light having two states: on and off.
+                            Clicking on a light toggles its state and the state of its adjacent lights. The goal is to turn off all the lights on the grid.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/Cimba22/LightsOut.git" target="_blank" class="project-link"><i class="fab fa-github"></i>View Code</a>
+                            <a href="https://github.com/Cimba22/LightsOut.git" target="_blank" class="project-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/img.png" alt="ReviewHub">
+                        <div class="project-overlay"></div>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">PostgresQL</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Docker</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ReviewHub</h3>
+                        <p class="project-description">
+                            This web application is designed for conveniently storing and managing reviews for various products, movies, books, or other items.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/Cimba22/ReviewHub.git" target="_blank" class="project-link"><i class="fab fa-github"></i>View Code</a>
+                            <a href="https://github.com/Cimba22/ReviewHub.git" target="_blank" class="project-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+</th:block>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Oleksandra Mala</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+          integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+    <!--Loading animation-->
+<div th:replace="~{fragments/loader :: loader}"></div>
+
+    <!--Background shapes-->
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="floating-shape shape-4"></div>
+
+    <!--Header-->
+    <div th:replace="~{fragments/header :: site-header}"></div>
+
+    <!--Hero Section-->
+    <div th:replace="~{fragments/hero :: hero-section}"></div>
+
+    <!--About Section-->
+    <div th:replace="~{fragments/about :: about-section}"></div>
+
+    <!--Projects Section-->
+    <div th:replace="~{fragments/projects :: projects-section}"></div>
+
+    <!--Experience Section-->
+    <div th:replace="~{fragments/experience :: experience-section}"></div>
+
+    <!--Achievements Section-->
+    <div th:replace="~{fragments/achievements :: achievements-section}"></div>
+
+    <!--Contact Section-->
+    <div th:replace="~{fragments/contact :: contact-section}"></div>
+
+    <!--footer Section-->
+    <div th:replace="~{fragments/footer :: footer-section}"></div>
+
+    <!--Custom script file-->
+<script src="/js/script.js"></script>
+
+</body>
+</html>
