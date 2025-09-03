@@ -8,6 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 2000);
     });
 
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+// Обработчик клика по бургеру
+    mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
     const emailLink = document.getElementById("email-link");
     emailLink.addEventListener("click", function(event) {
         event.preventDefault(); // предотвращает переход по ссылке
