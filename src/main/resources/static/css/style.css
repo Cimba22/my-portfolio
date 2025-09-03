@@ -1498,6 +1498,9 @@ textarea.form-control {
         gap: 1.5rem;
     }
 
+    .logo::after {
+        width: 100px; /* или даже width: 50%; */
+    }
 
 
     .hero-title {
@@ -1586,6 +1589,9 @@ textarea.form-control {
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
+    .shape-1, .shape-2, .shape-3, .shape-4 {
+        display: none;
+    }
     .container {
         /*background: brown;*/
         max-width: 1000px;
@@ -1645,6 +1651,10 @@ textarea.form-control {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
+    .shape-1, .shape-2, .shape-3, .shape-4 {
+        display: none;
+    }
 
     .container {
         max-width: 800px;
@@ -1861,6 +1871,10 @@ textarea.form-control {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+
+    .shape-1, .shape-2, .shape-3, .shape-4 {
+        display: none;
+    }
     .container {
         /*background: powderblue;*/
         max-width: 550px;
@@ -2126,28 +2140,36 @@ textarea.form-control {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+    .shape-1, .shape-2, .shape-3, .shape-4 {
+        display: none;
+    }
+
+
+
     .container {
         /*background: violet;*/
         margin: 0 auto;
     }
-
-
     /*Header*/
     .header {
         padding: 1.3rem 0; /* уменьшаем верхний и нижний отступ */
-        width: 65%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .container.header-container {
+        width: 340px;
         margin: 0 auto;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        grid-template-columns: 12fr 6fr;
+        grid-template-columns: 17fr 6fr;
     }
 
     .logo {
         font-size: 1.5rem; /* чуть меньше логотип */
+        margin-left: 20px;
     }
     .logo::after {
         width: 125px;
@@ -2158,6 +2180,10 @@ textarea.form-control {
         display: block;
     }
 
+    .nav {
+        margin-left: 30px;
+    }
+
     /* Скрываем обычные ссылки */
     .nav-links {
         display: none;
@@ -2166,11 +2192,12 @@ textarea.form-control {
         position: absolute;
         top: 100%;
         left: 0;
-        width: 70%;
+        width: 90%;
         background: rgba(5, 5, 16, 0.95);
         backdrop-filter: blur(10px);
         padding: 1rem 0;
         border-top: 1px solid var(--secondary-color);
+        overflow-x: hidden;
     }
 
     /* Когда меню активно */
